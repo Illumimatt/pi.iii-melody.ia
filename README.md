@@ -51,6 +51,7 @@ A equipe é formada por um grupo com habilidades complementares, adotando práti
 O projeto será desenvolvido e acompanhado com as seguintes ferramentas:
 
 - **Gestão e Código-fonte:** GitHub
+- - **Planejamento e tarefas:** [`Google Drive`](https://drive.google.com/drive/folders/1mQ2Xc6IGdEpPH0ltttwKjIytdraUunCP?usp=sharing)
 - **Framework Client:** Flutter (Dart)
 - **APIs e Serviços Externos:** Genius API e music.ai
 - **Processamento de Áudio Visual:** Algoritmo audiowaveform (BBC)
