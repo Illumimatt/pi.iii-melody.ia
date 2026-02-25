@@ -53,7 +53,7 @@ O projeto será desenvolvido e acompanhado com as seguintes ferramentas:
 - **Gestão e Código-fonte:** GitHub
 - **Planejamento e tarefas:** [`Google Drive`](https://drive.google.com/drive/folders/1mQ2Xc6IGdEpPH0ltttwKjIytdraUunCP?usp=sharing)
 - **Framework Client:** Flutter (Dart)
-- **APIs e Serviços Externos:** Genius API e music.ai
+- **APIs e Serviços Externos:** music.ai
 - **Processamento de Áudio Visual:** Algoritmo audiowaveform (BBC)
 - **IA e NLP:** Modelos GPT (Correção de letras)
 
@@ -96,7 +96,7 @@ O servidor central (Backend). Atua como intermediário, gerenciando contas de us
 O núcleo científico do projeto. Contém os scripts e modelos de machine learning que recebem o áudio bruto e devolvem as trilhas separadas (stems) e os metadados de tempo de voz.
 
 ### 4. Camada de Provedor de Letras (`melody.ly`)
-Microsserviço focado em consumir dados da Genius API, processar as letras brutas, romanizá-las e refiná-las via modelos de linguagem (GPT).
+Microsserviço focado em consumir dados, processar as letras brutas, romanizá-las e refiná-las via modelos de linguagem (GPT).
 
 ## Cronograma e Fluxo de Desenvolvimento
 
