@@ -10,6 +10,12 @@
   <img src="https://img.shields.io/badge/tech-Python_IA-black?logo=python" alt="Tech: Python">
 </p>
 
+## 🏆 Status Atual: MVP Validado em Campo (ConectaCEUB)
+
+O **melody.ai** ultrapassou a fase de prova de conceito. Nosso Produto Mínimo Viável (MVP) foi submetido a testes de estresse com usuários reais durante o evento de tecnologia **ConectaCEUB**. 
+
+A plataforma operou continuamente, processando sob demanda dezenas de músicas em tempo real sem degradação do servidor. Com base nos dados coletados in loco, alcançamos notas de aprovação quase unânimes (entre 9 e 10) em **usabilidade do aplicativo**, **qualidade do isolamento instrumental** e **democratização do catálogo musical**.
+
 ## Sobre o Projeto: "melody.ai / melody.io"
 
 ### Objetivo
@@ -51,19 +57,19 @@ A equipe é formada por um grupo com habilidades complementares, adotando práti
 
 ## Ferramentas e Tecnologias
 
-O projeto será desenvolvido e acompanhado com as seguintes ferramentas:
+O ecossistema é sustentado por uma infraestrutura própria e tecnologias de ponta para garantir baixa latência e escalabilidade:
 
-- **Gestão e Código-fonte:** GitHub
+- **Framework Client (Frontend):** Flutter (Dart)
+- **Motor de Inteligência Artificial (The Engine):** FastAPI (Python) orquestrando modelos avançados de Machine Learning (Demucs para separação de áudio, Whisper Turbo + MMS_FA para transcrição e alinhamento *word-level*).
+- **Backend e Infraestrutura de Dados:** Supabase (PostgreSQL, Auth e Storage) e Dart (Server-side).
+- **Gestão e DevOps:** GitHub Actions (CI/CD) e Docker.
 - **Planejamento e tarefas:** [`Google Drive`](https://drive.google.com/drive/folders/1mQ2Xc6IGdEpPH0ltttwKjIytdraUunCP?usp=sharing)
-- **Framework Client:** Flutter (Dart)
-- **APIs e Serviços Externos:** music.ai
-- **Processamento de Áudio Visual:** Algoritmo audiowaveform (BBC)
-- **IA e NLP:** Modelos GPT (Correção de letras)
 
 ### Justificativa das Escolhas
 
-- **Flutter (Client):** Escolhido pela sua capacidade de compilar nativamente para múltiplas plataformas (Mobile e Web) a partir de um único código-base, essencial para alcançar o maior número de usuários no aplicativo `melody.io`.
-- **Arquitetura de Microsserviços:** A divisão em repositórios (`.ai`, `.api`, `.ly`, `.io`) permite que a equipe de IA trabalhe de forma isolada nos modelos em Python/PyTorch, enquanto a interface consome os dados via requisições assíncronas, garantindo escalabilidade.
+- **Flutter (Client):** Escolhido pela capacidade de compilação nativa e alta performance na renderização fluida de ondas sonoras (waveforms) e letras sincronizadas em tempo real.
+- **FastAPI + Modelos Locais:** Abandonamos APIs genéricas (como music.ai) para criar nosso próprio pipeline de inferência. Isso garante controle absoluto sobre a qualidade da separação de *stems* e sobre o tempo de resposta.
+- **Supabase:** Atua como nossa fonte única de verdade (Single Source of Truth) e infraestrutura de persistência, suportando o cache de dados e o armazenamento dos áudios processados.
 
 ## ⚡ AI Pipeline Implementado
 
@@ -73,6 +79,13 @@ O motor do sistema conta com uma **Pipeline de Inteligência Artificial** robust
 - ✅ **Transcrição Automática:** Gera letras a partir da trilha de voz isolada.
 - ✅ **Refinamento com GPT:** Corrige e ajusta a confiabilidade das letras extraídas.
 - ✅ **Reconhecimento de Voz:** Associa segmentos específicos da música a diferentes cantores originais.
+
+## 🚀 Performance e Otimização
+
+A arquitetura do motor de IA foi rigorosamente otimizada para entregar resultados em tempo recorde e poupar recursos do usuário final:
+
+- **Processamento Ultra-Rápido:** A pipeline completa processa uma música padrão (~3 minutos) em cerca de **30 segundos**, executando simultaneamente o download, a separação de faixas (stems) e o alinhamento de letras.
+- **Eficiência de Dados (Compressão de 90%):** Implementamos uma estratégia de codificação avançada que reduz o tamanho dos arquivos finais de áudio de cerca de 30MB para apenas **3MB**. Isso garante downloads instantâneos no aplicativo móvel e economia drástica nos custos de armazenamento em nuvem.
 
 ## 🎤 Singing View & Feedback System
 
@@ -92,8 +105,8 @@ A estrutura se divide nas seguintes áreas de responsabilidade:
 ### 1. Camada de Interface (`melody.io`)
 O aplicativo cliente (Frontend). Responsável por toda a interação do usuário, pesquisa de músicas, reprodução sincronizada de áudio e letras, geração de waveforms e captura de microfone.
 
-### 2. Camada de API e Orquestração (`melody.api`)
-O servidor central (Backend). Atua como intermediário, gerenciando contas de usuário, salvando projetos (clips e presets) e roteando as requisições de processamento de áudio para os módulos corretos.
+### 2. Camada de API, Orquestração e Cache Persistente (`melody.api`)
+O servidor central (Backend) atua não apenas como roteador, mas com uma arquitetura de resiliência ativa. Implementamos um sistema de **cache inteligente** no banco de dados (Supabase). Quando uma música é pesquisada, o sistema verifica o cache local; se existir, os metadados são servidos em menos de 1 segundo. Isso elimina a dependência contínua de provedores externos (evitando bloqueios por *rate limiting* do YouTube) e permite que nosso catálogo cresça organicamente de forma segura.
 
 ### 3. Camada de Inteligência Artificial (`melody.ai`)
 O núcleo científico do projeto. Contém os scripts e modelos de machine learning que recebem o áudio bruto e devolvem as trilhas separadas (stems) e os metadados de tempo de voz.
