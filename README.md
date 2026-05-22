@@ -14,7 +14,7 @@
 
 O **melody.ai** ultrapassou a fase de prova de conceito. Nosso Produto Mínimo Viável (MVP) foi submetido a testes de estresse com usuários reais durante o evento de tecnologia **ConectaCEUB**. 
 
-A plataforma operou continuamente, processando sob demanda dezenas de músicas em tempo real sem degradação do servidor. Com base nos dados coletados in loco, alcançamos notas de aprovação quase unânimes (entre 9 e 10) em **usabilidade do aplicativo**, **qualidade do isolamento instrumental** e **democratização do catálogo musical**.
+A plataforma operou continuamente, processando sob demanda dezenas de músicas em tempo real sem degradação do servidor. Com base nos dados coletados com os participantes, alcançamos notas de aprovação quase unânimes (entre 9 e 10) em **usabilidade do aplicativo**, **qualidade do isolamento instrumental** e **democratização do catálogo musical**.
 
 ## Sobre o Projeto: "melody.ai / melody.io"
 
