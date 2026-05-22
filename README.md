@@ -1,4 +1,7 @@
-<h3 align="center">projeto.integrador.iii</h3>
+<h3 align="center">projeto.integrador.iii Melody.ai</h3>
+<div align="center">
+  <img src="melody_logo.png" width="500" height="600" alt="Logo do projeto">
+</div>
 <p align="center"> Este projeto integrador está sendo desenvolvido como parte do curso de Ciência da Computação da Universidade CEUB e tem como objetivo o desenvolvimento de uma plataforma de karaoke impulsionada por IA, do conceito ao lançamento. </p>
 
 <p align="center">
