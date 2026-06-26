@@ -1,4 +1,4 @@
-<h3 align="center">projeto.integrador.iii Melody.ai</h3>
+<h3 align="center">Projeot Integrador III Melody AI</h3>
 <div align="center">
   <img src="melody_logo.png" width="500" height="600" alt="Logo do projeto">
 </div>
@@ -125,6 +125,21 @@ O projeto segue uma metodologia ágil, baseada no framework **Scrum**, conduzida
 3.  **Review:** Apresentação das funcionalidades concluídas (como a nova Singing View) para a equipe.
 4.  **Retrospectiva:** Reunião para identificar o que funcionou e o que melhorar na próxima iteração de desenvolvimento.
 
+### Documentos
+
+* [Termo de Anuência e Compromisso](https://drive.google.com/file/d/1poLwJX28kVavbTtrcfOr9UHBIrV2zQ25/view?usp=share_link)
+* [Documento de Backlog do Produto](https://docs.google.com/document/d/1rOwaxlCfRx9e7oK1dGxd9jt7IT2nbJqfZnb2JKFftK4/edit?usp=share_link)
+* [Documento de Planejamento 5W2H](https://docs.google.com/document/d/1cOORKcFZy7MSWDR6SRHwSRMdExmfk4IE8dLYdFu9t5U/edit?usp=share_link)
+* [Documento de Plano de Trabalho](https://docs.google.com/document/d/19oqwRuF4SfFkLfUYvrnpepyW21FMppC7yJldUuXTdSQ/edit?usp=share_link)
+* [Documento de Histórias de Usuário](https://docs.google.com/document/d/1hvNNnHw9IfnI7sjtTSZsVLjz_mYy9H8d4uIkwzAWWOs/edit?usp=share_link)
+* [Documento de Visão](https://docs.google.com/document/d/1AKVcCaHcKl29DUaBqxhA-aPOu1jEFb3AxIE1TYiy22Q/edit?usp=share_link)
+* [Documento de Requisitos Funcionais, Não funcionais e Escopo](https://docs.google.com/document/d/136x0oBskko3ewS85kFORf9tAF8z2Qy4vGA1VrqMsO7o/edit?usp=share_link)
+* [Documento Proposta de Atividade: ConectaCEUB](https://docs.google.com/document/d/1_nmvFE5YzxxitjNvV4ASwGye5Fp-NsGvNGMFDp0NpH0/edit?usp=share_link)
+* [Documento Validação de Campo e Testes de Usabilidade](https://docs.google.com/document/d/1KfEorBiuho7ekO23GrjNGJ4iI36rGXelXAAD4L4iAB0/edit?usp=share_link)
+* [Relatório de Evolução Técnica](https://docs.google.com/document/d/1a2jEWa9p_wYsiZVq64iy7Kj82OqPRe89-kv3mtaf89I/edit?usp=share_link)
+* [Documento de Retrospectiva](https://docs.google.com/document/d/1x7cy0_jj7ztzeuVHgw9SjfMnE9qD4ppWTBAznQTviZA/edit?usp=share_link)
+* [Evidências](https://drive.google.com/drive/folders/1IfNl9kdiFpBMxaB4_vzvmAwixT7AhgEo?usp=share_link) 
+
 <div align="center">
-    <p>Feito com ❤️ pela equipe do Projeto Integrador</p>
+    <p>Feito com ❤️ pela equipe Melody AI</p>
 </div>
